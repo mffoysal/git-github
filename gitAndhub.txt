@@ -1,0 +1,57 @@
+git and github
+
+1. git (a, local : working dir -> stage -> local repository ->remote
+	b, remote: )
+2. install git from git-download
+3. open git-bash terminal with a particular folder on right click 
+	( a, make dir/folder -> mkdir foldername
+          b, go folder -> cd foldername
+	  c, create file -> touch file.txt/file_type
+	  d, back working directory : cd ../
+	  e, clear terminal over written with : clear	
+	)
+4. open editor with command : code .
+5. git repository create(git initialise-create local repository) : git init
+6. github repository clone with : git clone https://github.com/mffoysal/git-github.git
+7. directory folder details with : ls
+8. After any changing - git change status with : git status
+9. working dir-> stage ( git add)
+	a, check any change with : git status
+	b, add on stage : git add --all/-A
+	c, check git status
+	d, back from git add stage with : git reset
+	e, 
+10. git add .  (only add on stage folder(all change)  which is my current folder)
+11. git add * (add untracked change work but not add deleted work only)
+12. git add file.file_type / git add folder_dir/../file.file_type(particular file or work add on stage)
+13. git add *.txt/file_type (add on stage all files which extension is file_type)
+14. stage -> local reposotory : (commit)
+	// after adding on stage, we have to commit that we already done or git add --all/-A/.
+	a, git commit -m "summary_message"
+	b, after commit if i back to stage : git reset HEAD~
+
+15. i delete any file then if i hard role back : git reset --hard
+16. remove file : git rm file_name.file_type
+	a, if i remove any file, git remove that file and add on stage
+	b, if i delte forcefully : git rm file.file_type -f (if any change but not commit)
+17. git rm --cached file.file_type (add on stage changed but actually not deleted)
+18. git rm -r folder
+19. git Branch
+	// check branch : git branch, git branch --list
+	a, create branch : git branch branch_name
+	b,  switch branch : git checkout branch_name
+	c, if i change with a branch then we have to git add --all/. and commit 
+	d, branch reneme : git branch -m new_Name
+20. git Merging
+	a, git merge branch_name(reciever_branch) -m "merging message"
+	b, git merge main(sender_branch) -m "merging message with sender"
+	// merge colflict :
+21. remote reposotry : github
+	git push : local_re -> remote_re
+	git fetch: remote changes -> local
+	git pull: remote changes and merge -> local (fetch+merge)
+	a, git remote add origin url_here
+	b, git remote -v (git origin check)
+	b, git remote remove origin
+	b, git push origin branch_name
+	c, (use "git rm --cached <file>..." to unstage)
