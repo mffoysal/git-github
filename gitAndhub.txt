@@ -37,6 +37,9 @@ git and github
 17. git rm --cached file.file_type (add on stage changed but actually not deleted)
 18. git rm -r folder
 19. git Branch
+	1. git branch -r :-> git remote branch check all
+	2. git branch -a :-> local and remote all branch 
+	3. git fetch --all :->fetch all branch 
 	// check branch : git branch, git branch --list
 	a, create branch : git branch branch_name
 	b,  switch branch : git checkout branch_name
